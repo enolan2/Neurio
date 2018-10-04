@@ -32,8 +32,8 @@ def predict_generation(time, house_num):
     print('Predicting generation for house #'+str(house_num))
 
 
-    hour = time.dt.hour # to capture day and night 
-    month = time.dt.month  # to capture seasonality 
+    hour = time.hour # to capture day and night 
+    month = time.month  # to capture seasonality 
 
     # area and house number dataframe
     locations = [(0,2),
@@ -55,6 +55,7 @@ def predict_generation(time, house_num):
 
     # get weather ; returns dictionary of weather 
     #weather_hr = weather(location, hour)
+    # dummy variable
     cloudcover =98 # weather_hr['cloudiness']
     
     # import linear regresion
