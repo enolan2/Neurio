@@ -29,8 +29,8 @@ warnings.filterwarnings("ignore")
 
 
 # file inputs 
-filename_gen = '/Users/eimearnolan/Google Drive/neurio/data/test_generation.h5'
-filename_weather = '/Users/eimearnolan/Google Drive/neurio/data/test_weather.h5'
+filename_gen = 'test_generation.h5'
+filename_weather = 'test_weather.h5'
 
 # extracting h5 files
 f_gen = h5py.File(filename_gen, 'r')
